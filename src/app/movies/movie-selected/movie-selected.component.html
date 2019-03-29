@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-12">
+     <br/>
+     <br/>
+     <div class="container-movie" *ngIf="movieSelected">
+       <p>{{movieSelected.title}}</p>
+       <img src="{{movieSelected.medium_cover_image}}">
+       <h5>Raiting {{movieSelected.rating}}</h5>
+       <h5>Año {{movieSelected.year}}</h5>
+       <h5>Duración {{movieSelected.runtime}} minutos</h5>
+     </div>
+  </div>
+</div>

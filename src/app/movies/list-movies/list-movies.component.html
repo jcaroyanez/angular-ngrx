@@ -1,0 +1,12 @@
+<h1 *ngIf="loading">Cargando.....</h1>
+<br/>
+<div class="alert alert-danger" role="alert" *ngIf="isError">
+  {{message}}
+</div>
+<br/>
+<ul class="list-group">
+  <li class="list-group-item active text-center">Lista de peliculas</li>
+  <li  class="list-group-item item-select" *ngFor="let movie of listMovies" (click)="movieSelected(movie)">{{movie.title}}</li>
+</ul>
+<br/>
+<br/>
